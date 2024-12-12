@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizeNET", "Authorize.NET\AuthorizeNET.csproj", "{5D52EAEC-42FB-4313-83B8-69E2F55EBF14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeNET", "Authorize.NET\AuthorizeNET.csproj", "{5D52EAEC-42FB-4313-83B8-69E2F55EBF14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizeNETtest", "AuthorizeNETtest\AuthorizeNETtest.csproj", "{CDA0D4D8-E4AA-4BEA-8839-04D69607D914}"
 EndProject
