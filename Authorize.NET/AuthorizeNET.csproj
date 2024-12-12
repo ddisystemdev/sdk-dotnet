@@ -8,20 +8,28 @@
     <Product>Official .NET SDK for Authorize.Net</Product>
     <Copyright>Copyright © Visa Inc 2018</Copyright>
     <FileVersion>2.0.4.0</FileVersion>
-    <AssemblyVersion>2.0.4.0</AssemblyVersion>
+	<AssemblyVersion>2.0.4.0</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin/Debug/</OutputPath>
     <DocumentationFile>bin/Debug/AuthorizeNet.XML</DocumentationFile>
     <NoWarn>0219,1591,1635</NoWarn>
+    <DebugType>portable</DebugType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin/Release</OutputPath>
     <DocumentationFile>bin/Release/AuthorizeNet.XML</DocumentationFile>
+    <DebugType>portable</DebugType>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyName>AuthorizeNET.Standard</AssemblyName>
+    <Version>$(AssemblyVersion)</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='USELOCAL|AnyCPU'">
+    <DebugType>portable</DebugType>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
